@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body {
+	height: 100%;
+	margin: 0;
+	border-radius: 10px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+}
+
+.signup-image {
+	width: 25%;
+}
+
+.signup-form {
+	width: 30%;
+}
+
+.signup-image img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+
+}
+
+.Redirect {
+	display: flex;
+	justify-content: center;
+
+}
+
+
+.signup-image-link {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #3892DB;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: background-color 0.3s;
+	display: flex;
+	justify-content: center;
+}
+
+.signup-image-link:hover {
+	background-color: #3A7BDF;
+}
+
+
+
+.form-group {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.fa-solid {
+	position: absolute;
+	top: 30%;
+	left: 1px;
+	transform: translateY(-50%);
+	color: #333;
+}
+
+label {
+	font-size: 16px;
+	font-weight: lighter;
+	font-family: cursive;
+
+}
+input {
+	width: 100%;
+	padding-left: 32px;
+	padding-bottom: 10px;
+	border: none;
+	border-bottom: 1px solid #333;
+	outline: none;
+	
+}
+
+
+input::placeholder {
+	color: #888;
+	font-family: cursive;
+}
+
+
+input:focus {
+	border-bottom: 2px solid #007bff;
+}
+
+input[type="submit"] {
+  background-color: #3892DB;
+  color: #fff; 
+  padding: 5px 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; 
+  font-family: cursive;
+  width:70%;
+  margin-left: 50px;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #3A7BDF; 
+}
+
+input[type="checkbox"]{
+	width: 10px;
+}
+.agree-term {
+	margin-right: 10px;
+}
+
+.form-title {
+	margin-bottom: 30px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.label-agree-term {
+	align-items: center;
+	font-size: 12px;
+	font-family: cursive;
+}
+
+
+.term-service {
+	color: #007bff;
+	text-decoration: none;
+}
+
+
+.term-service:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 736px) {
+	.container {
+		flex-direction: column;
+
+	}
+}
